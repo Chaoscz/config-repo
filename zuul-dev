@@ -1,0 +1,16 @@
+zuul:
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders: 
+#    product: /myProduct/**
+  #排除路由
+#  ignored-patterns:
+#    - /**/product/listForOrder
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
