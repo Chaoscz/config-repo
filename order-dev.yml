@@ -9,12 +9,12 @@ spring:
   jpa:
     show-sql: true
   rabbitmq:
-    host: localhost
+    host: 47.96.102.168
     port: 5672
     password: guest
     username: guest
   redis:
-    host: localhost
+    host: 47.96.102.168
     port: 6379
 server:
   port: 8002
